@@ -1,68 +1,87 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+
 <body>
 
   <!-- this is the div that holds all of our content -->
-<div class="everything">
-<!-- this div will hold all of the menu items available  -->
-<div class="menuItems">
-  <div class="drinks"></div>
-  <div class="snacks"></div>
-  <div class="sandwiches"></div>
-  <div class="yummies"></div>
-</div>
+  <div class="everything">
+    <!-- this div will hold all of the menu items available  -->
+    <div class="menuItems">
+      <div class="menuOptions drinks"><span class="name">Drinks</span>
+        <span class="itemSpecifics description"></span>
+        <span class="itemSpecifics price"></span>
+      </div>
 
-<!-- this is the div that holds all of the cart components -->
-<div class="cart">
 
-  <!-- the header will hold are company name and expand/compress button -->
-<div class="header">
-</div>
+      <div class="menuOptions snacks"><span class="name">Snacks</span>
+        <span class="itemSpecifics description"></span>
+        <span class="itemSpecifics price"></span>
 
-<!-- the goods is where all of the main content for the cart will go such as
+
+      </div>
+      <div class="menuOptions sandwiches"><span class="name">Sandwiches</span>
+        <span class="itemSpecifics description"></span>
+        <span class="itemSpecifics price"></span>
+      </div>
+      <div class="menuOptions yummies"><span class="name">Yummies</span></div>
+      <span class="itemSpecifics description"></span>
+      <span class="itemSpecifics price"></span>
+    </div>
+
+    <!-- this is the div that holds all of the cart components -->
+    <div class="cart">
+
+      <!-- the header will hold are company name and expand/compress button -->
+      <div class="header">
+      </div>
+
+      <!-- the goods is where all of the main content for the cart will go such as
 list items for the cart items and inputs  -->
-<div class="theGoods">
-  <!-- these inputs will be hidden until credit/cash button is pushed -->
-  <input type="text" placeholder="cardNumber">
-  <input type="text" placeholder="cashTendered">
-  <input type="text" placeholder="experationDate">
-  <input type="text" placeholder="cvv">
-</div>
+      <div class="theGoods">
+        <!-- these inputs will be hidden until credit/cash button is pushed -->
+        <input type="text" placeholder="cardNumber">
+        <input type="text" placeholder="cashTendered">
+        <input type="text" placeholder="experationDate">
+        <input type="text" placeholder="cvv">
+      </div>
 
-<!-- the footer will hold our buttons to checkout/cash/credit pay -->
-<div class="footer">
+      <!-- the footer will hold our buttons to checkout/cash/credit pay -->
+      <div class="footer">
 
-<!-- this button is to checkout after payment is selected it will be hidden for the cart page -->
-  <button value="checkout"></button>
-
-  
-  <!-- this hold the buttons to pay with cash or credit  -->
-  <div class="cashoutButtons"
-  <button value="cash"></button>
-  <button value="credit"></button>
-</div>
-
-<!-- this will hold the three totals, subtotal, grand total and tax as list items -->
-<div class="totals">
-
-</div>
-
-
-</div>
-
-</div>
+        <!-- this button is to checkout after payment is selected it will be hidden for the cart page -->
 
 
 
+        <!-- this hold the buttons to pay with cash or credit  -->
+        <div class="cashoutButtons">
+          <button value="checkout"></button>
+          <button value="cash"></button>
+          <button value="credit"></button>
+        </div>
+
+        <!-- this will hold the three totals, subtotal, grand total and tax as list items -->
+        <div class="totals">
+
+        </div>
 
 
-</div>
-  <script type="text/javascript" src="jquery"></script>
+      </div>
+
+    </div>
+
+
+
+
+
+  </div>
+  <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>
